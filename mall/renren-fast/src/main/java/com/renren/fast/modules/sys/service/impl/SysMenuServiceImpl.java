@@ -11,13 +11,13 @@ package com.renren.fast.modules.sys.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.renren.common.utils.Constant;
-import io.renren.common.utils.MapUtils;
-import io.renren.modules.sys.dao.SysMenuDao;
-import io.renren.modules.sys.entity.SysMenuEntity;
-import io.renren.modules.sys.service.SysMenuService;
-import io.renren.modules.sys.service.SysRoleMenuService;
-import io.renren.modules.sys.service.SysUserService;
+import com.renren.fast.common.utils.Constant;
+import com.renren.fast.common.utils.MapUtils;
+import com.renren.fast.modules.sys.dao.SysMenuDao;
+import com.renren.fast.modules.sys.entity.SysMenuEntity;
+import com.renren.fast.modules.sys.service.SysMenuService;
+import com.renren.fast.modules.sys.service.SysRoleMenuService;
+import com.renren.fast.modules.sys.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

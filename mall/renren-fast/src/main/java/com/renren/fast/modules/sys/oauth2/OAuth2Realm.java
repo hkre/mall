@@ -8,9 +8,9 @@
 
 package com.renren.fast.modules.sys.oauth2;
 
-import io.renren.modules.sys.entity.SysUserEntity;
-import io.renren.modules.sys.entity.SysUserTokenEntity;
-import io.renren.modules.sys.service.ShiroService;
+import com.renren.fast.modules.sys.entity.SysUserEntity;
+import com.renren.fast.modules.sys.entity.SysUserTokenEntity;
+import com.renren.fast.modules.sys.service.ShiroService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;

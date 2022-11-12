@@ -9,8 +9,8 @@
 package com.renren.fast.modules.sys.oauth2;
 
 import com.google.gson.Gson;
-import io.renren.common.utils.HttpContextUtils;
-import io.renren.common.utils.R;
+import com.renren.fast.common.utils.HttpContextUtils;
+import com.renren.fast.common.utils.R;
 import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpStatus;
 import org.apache.shiro.authc.AuthenticationException;

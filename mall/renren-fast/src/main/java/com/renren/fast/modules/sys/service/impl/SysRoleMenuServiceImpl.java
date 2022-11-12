@@ -9,9 +9,9 @@
 package com.renren.fast.modules.sys.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.renren.modules.sys.dao.SysRoleMenuDao;
-import io.renren.modules.sys.entity.SysRoleMenuEntity;
-import io.renren.modules.sys.service.SysRoleMenuService;
+import com.renren.fast.modules.sys.dao.SysRoleMenuDao;
+import com.renren.fast.modules.sys.entity.SysRoleMenuEntity;
+import com.renren.fast.modules.sys.service.SysRoleMenuService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -9,10 +9,10 @@
 package com.renren.fast.modules.sys.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.renren.common.utils.MapUtils;
-import io.renren.modules.sys.dao.SysUserRoleDao;
-import io.renren.modules.sys.entity.SysUserRoleEntity;
-import io.renren.modules.sys.service.SysUserRoleService;
+import com.renren.fast.common.utils.MapUtils;
+import com.renren.fast.modules.sys.dao.SysUserRoleDao;
+import com.renren.fast.modules.sys.entity.SysUserRoleEntity;
+import com.renren.fast.modules.sys.service.SysUserRoleService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

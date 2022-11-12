@@ -9,11 +9,11 @@
 package com.renren.fast.modules.sys.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.renren.common.utils.R;
-import io.renren.modules.sys.dao.SysUserTokenDao;
-import io.renren.modules.sys.entity.SysUserTokenEntity;
-import io.renren.modules.sys.oauth2.TokenGenerator;
-import io.renren.modules.sys.service.SysUserTokenService;
+import com.renren.fast.common.utils.R;
+import com.renren.fast.modules.sys.dao.SysUserTokenDao;
+import com.renren.fast.modules.sys.entity.SysUserTokenEntity;
+import com.renren.fast.modules.sys.oauth2.TokenGenerator;
+import com.renren.fast.modules.sys.service.SysUserTokenService;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;

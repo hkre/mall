@@ -8,7 +8,8 @@
 
 package com.renren.fast.modules.sys.oauth2;
 
-import io.renren.common.exception.RRException;
+
+import com.renren.fast.common.exception.RRException;
 
 import java.security.MessageDigest;
 import java.util.UUID;
