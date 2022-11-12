@@ -7,6 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>coupon</name>
     <description>coupon</description>
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -57,6 +58,17 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+
+    <!--指定仓库地址-->
+    <distributionManagement>
+        <repository>
+            <!--此名称要和.m2/settings.xml中设置的ID一致-->
+            <id>test</id>
+            <url>http://101.34.85.191:8081/repository/test-release/</url>
+        </repository>
+
+    </distributionManagement>
 
     <build>
         <plugins>

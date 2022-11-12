@@ -4,9 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.guli.order</groupId>
     <artifactId>order</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-RELEASE</version>
     <name>order</name>
     <description>order</description>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -58,6 +59,16 @@
         </dependencies>
     </dependencyManagement>
 
+    <!--指定仓库地址-->
+    <distributionManagement>
+        <repository>
+            <!--此名称要和.m2/settings.xml中设置的ID一致-->
+            <id>test</id>
+            <url>http://101.34.85.191:8081/repository/tenxunyunrepo/</url>
+        </repository>
+
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -75,7 +86,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.guli.order.OrderApplication</mainClass>
+                    <mainClass>com.guli.coupon.CouponApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -88,5 +99,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

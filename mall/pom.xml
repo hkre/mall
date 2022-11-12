@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.guli.mall</groupId>
     <artifactId>mall</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-RELEASE</version>
     <name>mall</name>
     <description>mall</description>
     <packaging>pom</packaging>
@@ -14,6 +14,46 @@
         <module>mall-product</module>
         <module>mall-ware</module>
         <module>mall-order</module>
+        <module>renren-fast</module>
     </modules>
+
+    <!--指定仓库地址-->
+    <distributionManagement>
+        <repository>
+            <!--此名称要和.m2/settings.xml中设置的ID一致-->
+            <id>test</id>
+            <url>http://101.34.85.191:8081/repository/test-release/</url>
+        </repository>
+
+    </distributionManagement>
+
+
+    <build>
+        <plugins>
+            <!--发布代码Jar插件。如果是SpringBoot项目，则不用写此插件，默认就有-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+
+            <!--发布源码插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
