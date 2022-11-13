@@ -1,15 +1,13 @@
 package com.guli.product;
 
-import com.guli.product.service.EduSubjectService;
+
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class ProductApplicationTests {
 
-    @Autowired
-    EduSubjectService eduSubjectService;
+
 
     @Test
     void contextLoads() {
