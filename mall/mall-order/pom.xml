@@ -7,7 +7,7 @@
     <version>1.0-RELEASE</version>
     <name>order</name>
     <description>order</description>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>

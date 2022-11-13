@@ -1,0 +1,18 @@
+spring:
+#  datasource:
+#    username: root
+#    url: jdbc:mysql://101.34.85.191:3306/gulishop?useSSL=false
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    type: com.alibaba.druid.pool.DruidDataSource
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 1.15.77.162:8848
+        file-extension: yaml
+        prefix: gulishop-test
+        namespace: bcbda301-6cc1-4ef6-a95c-127749bb24e1
+      discovery:
+        server-addr: 1.15.77.162:8848
+        namespace: bcbda301-6cc1-4ef6-a95c-127749bb24e1

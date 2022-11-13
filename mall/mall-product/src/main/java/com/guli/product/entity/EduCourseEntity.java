@@ -2,11 +2,11 @@ package com.guli.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import java.math.BigDecimal;
-import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * 课程
@@ -24,7 +24,7 @@ public class EduCourseEntity implements Serializable {
 	 * 课程ID
 	 */
 	@TableId
-	private String id;
+	private Long id;
 	/**
 	 * 课程讲师ID
 	 */

@@ -2,10 +2,10 @@ package com.guli.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
 
 /**
  * 课程科目
@@ -23,7 +23,7 @@ public class EduSubjectEntity implements Serializable {
 	 * 课程类别ID
 	 */
 	@TableId
-	private String id;
+	private Long id;
 	/**
 	 * 类别名称
 	 */

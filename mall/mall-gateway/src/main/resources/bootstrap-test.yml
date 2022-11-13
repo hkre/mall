@@ -1,0 +1,11 @@
+#spring:
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 1.15.77.162:8848
+#        file-extension: yaml
+#        prefix: mall-gateway-test
+#        namespace: bcbda301-6cc1-4ef6-a95c-127749bb24e1
+#      discovery:
+#        server-addr: 1.15.77.162:8848
+#        namespace: bcbda301-6cc1-4ef6-a95c-127749bb24e1

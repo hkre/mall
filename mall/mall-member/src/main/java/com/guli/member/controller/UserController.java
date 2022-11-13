@@ -26,6 +26,15 @@ public class UserController {
     private UserService userService;
 
     /**
+     * 远程调用
+     */
+    @RequestMapping("/getInfo")
+    public R getInfo(){
+        return R.ok().put("msg","11.11");
+    }
+
+
+    /**
      * 列表
      */
     @RequestMapping("/list")

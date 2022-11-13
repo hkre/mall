@@ -10,12 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>mall-common</module>
         <module>mall-coupon</module>
         <module>mall-product</module>
         <module>mall-ware</module>
         <module>mall-order</module>
-        <module>renren-fast</module>
-        <module>renren-generator</module>
+        <module>mall-member</module>
     </modules>
 
     <!--指定仓库地址-->
@@ -53,7 +53,30 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.yml</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.yml</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+
+        </resources>
     </build>
 
 
